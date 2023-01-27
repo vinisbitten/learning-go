@@ -1,0 +1,7 @@
+go 1.19
+
+use (
+	./examples/01-hello-world
+	./examples/02-values
+	./examples/03-scope
+)
