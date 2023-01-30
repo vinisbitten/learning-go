@@ -2,6 +2,12 @@ go 1.19
 
 use (
 	./examples/01-hello-world
-	./examples/02-values
+	./examples/02-variables
 	./examples/03-scope
+	./examples/04-blank-identifier
+	./examples/05-consts
+	./examples/06-pointers
+	./examples/07-if
+	./examples/08-for
+	./examples/09-switch
 )

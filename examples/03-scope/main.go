@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	// Importing other packages
-	"scope/other-package"
+	goodbye "scope/other-package"
 )
+
 // global variables
 var (
 	a int
@@ -18,12 +19,11 @@ func main() {
 	printVars()
 
 	/*
-	Trynig to print c and d will give us an error
-	because they are declared inside the printVars function
-	therefore they are outside of the scope of the main function
+		Trynig to print c and d will give us an error
+		because they are declared inside the printVars function
+		therefore they are outside of the scope of the main function
 	*/
 	// fmt.Printf("| var c: %v   | type: %T    |\n", c, c)
-
 
 	// We can also access other files variables and functions if they are in the same package
 	fmt.Printf("\nAccessing func from other file (inside package)...\n\n")
@@ -33,13 +33,13 @@ func main() {
 
 	// We can also access functions from other packages if we import them
 	// using package goodbye from other-package
-	fmt.Printf("\nAccessing func from other file (inside package)...\n\n")
+	fmt.Printf("\nAccessing func from other file (outside package)...\n\n")
 	fmt.Println(".-------------------------.")
 	fmt.Printf("| %v |\n", goodbye.Say())
 	fmt.Println(".-------------------------.")
 
 	/*
-	Trying to access functions from other packages that are not declared with a capital letter will give us an error
+		Trying to access functions from other packages that are not declared with a capital letter will give us an error
 	*/
 	// fmt.Printf("| %v |\n", goodbye.scream())
 }
