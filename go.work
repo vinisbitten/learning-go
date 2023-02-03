@@ -10,4 +10,5 @@ use (
 	./examples/07-if
 	./examples/08-for
 	./examples/09-switch
+	./examples/10-func
 )
