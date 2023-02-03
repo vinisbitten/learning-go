@@ -5,9 +5,10 @@
 <h1>Golang</h1>
 </div>
 
-This is a repository to help you understand basic Go syntax and some of its features.
+This is a repository to help you understand basic Go syntax and some of its features.z
 Since we're using go workspaces, there are 2 ways of running the examples.
 Go workspaces allow you to create a multi-module environment.
+
 If you want to run for example the first module "hello-world", you can use the two methods below:
 
 ```bash
