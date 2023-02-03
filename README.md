@@ -1,31 +1,35 @@
-# Golang
+<div align="center">
 
-Since we are going to make multiple tests, we are going to use go WORK and go MODULES, if you are not familiar with these, I recommend you
+![go banner](/src/go-banner.png)
 
-to run the modules you can use, for example run the hello world module we created:
+<h1>Golang</h1>
+</div>
+
+This is a repository to help you understand basic Go syntax and some of its features.
+Since we're using go workspaces, there are 2 ways of running the examples.
+Go workspaces allow you to create a multi-module environment.
+If you want to run for example the first module "hello-world", you can use the two methods below:
 
 ```bash
-# To run the go file inside go module
+# Run the file (if you are in repo root path)
 go run examples/01-hello-world/main.go
-# Run the module itself
+# Run the module 
 go run hello-world
 ```
 
+![run print](/src/run-print.png)
+
+You can also turn go files or modules into binnary files and then run it:
 
 ```bash
-go run hello-world
-hello world
-Sometimes we’ll want to build our programs into binaries. We can do this using go build.
+# build file
+go build examples/01-hello-world/main.go
 
-go build hello-world.go
+# build module
+go build hello-world
 
-ls
-
-hello-world    hello-world.go
-
-We can then execute the built binary directly.
-
+# We can then execute the built binary directly
 ./hello-world
-
-hello world
 ```
+
+![build-print](/src/build-print.png)
